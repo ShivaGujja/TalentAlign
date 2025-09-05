@@ -175,21 +175,7 @@ Certificates:
  Microsoft Azure Administrator Associate (AZ-104)
  Microsoft Designing and Implementing Microsoft DevOps Solutions (AZ-400)"""
 # 3. Send Prompt
-prompt = f"""
-You are an AI that evaluates {candidate} profile against job requirements.
-Return results STRICTLY in this JSON format:
-
-{{
-  "skills_match": number,
-  "experience_match": number,
-  "project_relevance": number,
-  "overall_match": number,
-  "matching_skills": [list of matched skills],
-  "missing_skills": [list of missing skills],
-  "explanation": "one-line explanation"
-}}
-
-Job: We are currently hiring for the position of JavaScript Backend Developer (Web Scraping) and are looking for experienced professionals who are strong in backend development using JavaScript technologies, particularly NestJS, ORM, and web scraping tools like Puppeteer.
+Job = """We are currently hiring for the position of JavaScript Backend Developer (Web Scraping) and are looking for experienced professionals who are strong in backend development using JavaScript technologies, particularly NestJS, ORM, and web scraping tools like Puppeteer.
 
 Job Title: JavaScript Backend Developer
 Experience: 6+ Years
@@ -222,6 +208,23 @@ Qualifications:
 Bachelor's or Master’s degree in Computer Science or related field
 Minimum 6 years of relevant development experience 
 """
+prompt = f"""
+You are an AI that evaluates {candidate} profile against job requirements.
+Return results STRICTLY in this JSON format:
+
+{{
+  "skills_match": number,
+  "experience_match": number,
+  "project_relevance": number,
+  "overall_match": number,
+  "matching_skills": [list of matched skills],
+  "missing_skills": [list of missing skills],
+  "explanation": "one-line explanation"
+}}
+
+Job desicription is{Job}:
+
+make sure the be precise about the data in the json"""
 
 response = model.generate_content(
     prompt,
