@@ -18,9 +18,7 @@ class MatchResult(BaseModel):
     matching_skills: list[str]
     missing_skills: list[str]
     explanation: str
-candidate="""Vamshi Krishna Gollapudi
-Krishna.cloud2025@gmail.com | 9603845567
-https://www.linkedin.com/in/vamsikrishna-gollapudi-93386636b/
+candidate="""Vamshi Krishna 
 Over all 6 + Years of experience in the IT Industry and having 5 + Years of experience in Azure, Configuration Management,
 Infrastructure automation, and migration. Experience in dealing with Linux and Windows server administration. Working
 experience on DevOps tools like Azure DevOps CI/CD and Terraform. Good Knowledge on Docker and Kubernetes.
