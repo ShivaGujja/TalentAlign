@@ -172,40 +172,12 @@ Directory, DNS, and DHCP.
 Certificates:
  Microsoft Azure Administrator Associate (AZ-104)
  Microsoft Designing and Implementing Microsoft DevOps Solutions (AZ-400)"""
-# 3. Send Prompt
-Job = """We are currently hiring for the position of JavaScript Backend Developer (Web Scraping) and are looking for experienced professionals who are strong in backend development using JavaScript technologies, particularly NestJS, ORM, and web scraping tools like Puppeteer.
 
-Job Title: JavaScript Backend Developer
-Experience: 6+ Years
-Location: Hyderabad (Hybrid)
 
-Type: Full-time
 
-About the Role:
-This role involves building and maintaining large-scale, data-heavy applications that process terabytes of data daily. You will be responsible for designing scalable backend solutions and working on real-time data processing, API development, and microservices architecture.
 
-Key Responsibilities:
 
-Design, develop, and test scalable backend systems
-Build and maintain REST APIs and data processing workflows
-Collaborate with internal and external teams for integration
-Ensure performance, security, and fault tolerance
-Troubleshoot and optimize for high-performance data handling
-Required Skills:
-
-Strong hands-on experience with JavaScript (Node.js)
-Proficiency in NestJS, ORM, and Puppeteer
-Good knowledge of PostgreSQL and database optimization
-Experience with REST APIs, microservices, and message brokers
-Familiarity with Agile/Scrum processes
-Cloud experience (Azure preferred) but any other proven cloud experience req.
-Strong understanding of design patterns and web sockets
-Exposure to large-scale or big data applications is a plus
-Qualifications:
-
-Bachelor's or Master’s degree in Computer Science or related field
-Minimum 6 years of relevant development experience 
-"""
+Job = input("enter job discription")
 prompt = f"""
 You are an AI that evaluates {candidate} profile against job requirements.
 Return results STRICTLY in this JSON format:
@@ -226,7 +198,9 @@ make sure the be precise about the data in the json"""
 
 response = model.generate_content(
     prompt,
-    generation_config={"response_mime_type": "application/json"}
+    generation_config={"response_mime_type": "application/json",
+                       "temperature":0}
+    
 )
 
 # 4. Parse JSON into Python object
