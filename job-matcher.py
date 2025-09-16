@@ -3,6 +3,7 @@ from pydantic import BaseModel
 import os
 import json
 from dotenv import load_dotenv
+import docx
 load_dotenv()
 
 # 1. Configure Gemini
@@ -29,10 +30,11 @@ with open("Job_discription.txt") as JD:
   Job = JD.read()
 
 
-def Analyze_resume(candidate,Job):
+def Analyze_resume(candidate,Job,file_name):
+  print(file_name)
   prompt = f"""
   You are an AI that evaluates {candidate} profile against job requirements.
-  Return results STRICTLY in this JSON format:
+  Return results STRICTLY in this JSON format ":
 
   {{
     "skills_match": number,
@@ -43,8 +45,8 @@ def Analyze_resume(candidate,Job):
     "missing_skills": [list of missing skills],
     "explanation": "one-line explanation"
   }}
-
   Job desicription is{Job}:
+  (missing_skills,matching skills should strictly taken from the job discription)
 
   make sure the be precise about the data in the json"""
 
@@ -58,12 +60,23 @@ def Analyze_resume(candidate,Job):
   result=result_pre.model_dump_json(indent=8)
   print(result)
 
+def read_docx(doc):
+  document=docx.Document(doc)
+  full_text=[]
+  for paragraph in document.paragraphs:
+    full_text.append(paragraph.text)
+  return '\n'.join(full_text)
+
 
 for resume in os.scandir(resume_directory):
-   if resume.name.endswith('.txt'):
-      with open(resume.path,encoding="utf-8") as res:
+  if resume.name.endswith('.txt'):
+    with open(resume.path,encoding="utf-8") as res:
          
-        res_txt=res.read()
-      Analyze_resume(res_txt,Job)
+      res_txt=res.read()
+    Analyze_resume(res_txt,Job,resume.name)
+  elif resume.name.endswith('.docx'):
+    res_txt=read_docx(resume)
+    Analyze_resume(res_txt,Job,resume.name)
+
   
 
