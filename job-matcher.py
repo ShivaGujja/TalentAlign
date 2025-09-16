@@ -4,6 +4,8 @@ import os
 import json
 from dotenv import load_dotenv
 import docx
+import pypdf
+
 load_dotenv()
 
 # 1. Configure Gemini
@@ -60,6 +62,7 @@ def Analyze_resume(candidate,Job,file_name):
   result=result_pre.model_dump_json(indent=8)
   print(result)
 
+#reads from word documents
 def read_docx(doc):
   document=docx.Document(doc)
   full_text=[]
@@ -67,6 +70,13 @@ def read_docx(doc):
     full_text.append(paragraph.text)
   return '\n'.join(full_text)
 
+#reads from pdf file
+def read_pdf(pdf):
+  pdf_doc=pypdf.PdfReader(pdf)
+  text=" "
+  for words in pdf_doc.pages:
+    text+= words.extract_text()
+  return text
 
 for resume in os.scandir(resume_directory):
   if resume.name.endswith('.txt'):
@@ -76,6 +86,9 @@ for resume in os.scandir(resume_directory):
     Analyze_resume(res_txt,Job,resume.name)
   elif resume.name.endswith('.docx'):
     res_txt=read_docx(resume)
+    Analyze_resume(res_txt,Job,resume.name)
+  elif resume.name.endswith('.pdf'):
+    res_txt=read_pdf(resume.path)
     Analyze_resume(res_txt,Job,resume.name)
 
   
