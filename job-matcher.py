@@ -27,9 +27,7 @@ resume_directory="C:/Internship_prep/Job-Matcher-AI/resumes"
 # with open("Resume.txt","r",encoding="utf-8") as C_V: 
 #   candidate=C_V.read()
 
-with open("Job_discription.txt") as JD:
-   
-  Job = JD.read()
+
 
 
 def Analyze_resume(candidate,Job,file_name):
@@ -61,6 +59,7 @@ def Analyze_resume(candidate,Job,file_name):
   result_pre = MatchResult.model_validate_json( response.text)
   result=result_pre.model_dump_json(indent=8)
   print(result)
+  return result
 
 #reads from word documents
 def read_docx(doc):
@@ -77,19 +76,39 @@ def read_pdf(pdf):
   for words in pdf_doc.pages:
     text+= words.extract_text()
   return text
+def main():
+  all_results=[]
+  with open("Job_discription.txt") as JD:
+   
+   Job = JD.read()
+  for resume in os.scandir(resume_directory):
+    if resume.name.endswith('.txt'):
+      with open(resume.path,encoding="utf-8") as res:
+           res_txt=res.read()
+      result=Analyze_resume(res_txt,Job,resume.name)
+      
 
-for resume in os.scandir(resume_directory):
-  if resume.name.endswith('.txt'):
-    with open(resume.path,encoding="utf-8") as res:
-         
-      res_txt=res.read()
-    Analyze_resume(res_txt,Job,resume.name)
-  elif resume.name.endswith('.docx'):
-    res_txt=read_docx(resume)
-    Analyze_resume(res_txt,Job,resume.name)
-  elif resume.name.endswith('.pdf'):
-    res_txt=read_pdf(resume.path)
-    Analyze_resume(res_txt,Job,resume.name)
+    elif resume.name.endswith('.docx'):
+      res_txt=read_docx(resume)
+      result=Analyze_resume(res_txt,Job,resume.name)
+      
+
+    elif resume.name.endswith('.pdf'):
+      res_txt=read_pdf(resume.path)
+      result=Analyze_resume(res_txt,Job,resume.name)
+    all_results.append({
+      "candidate_file":resume.name,
+      #"Overall_score":result["overall_match"],
+      #"details":Analyze_resume.model_dump()
+    })
+    #all_results.sort(key=lambda x:x['score'],reverse=True)
+
+    output_file_name="final_output.json"
+    with open(output_file_name ,'w', encoding='utf-8') as f:
+      json.dump(all_results,f,indent=4)
+
+    print("--analysis complted--")
 
   
-
+if __name__ == "__main__":
+    main()
