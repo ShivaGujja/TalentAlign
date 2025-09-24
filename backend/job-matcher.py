@@ -23,7 +23,7 @@ class MatchResult(BaseModel):
     missing_skills: list[str]
     explanation: str
 
-resume_directory = "C:/Internship_prep/Job-Matcher-AI/resumes"
+resume_directory = "C:/Internship_prep/Job-Matcher-AI/backend/resumes"
 
 
 # --- Resume Analyzer ---

@@ -1,12 +1,12 @@
 [
     {
         "candidate_file": "Resume2.txt",
-        "Overall_score": 94.0,
+        "Overall_score": 92.0,
         "details": {
-            "skills_match": 85.0,
-            "experience_match": 100.0,
-            "project_relevance": 100.0,
-            "overall_match": 94.0,
+            "skills_match": 86.0,
+            "experience_match": 95.0,
+            "project_relevance": 98.0,
+            "overall_match": 92.0,
             "matching_skills": [
                 "JavaScript (Node.js)",
                 "NestJS",
@@ -19,41 +19,42 @@
                 "message brokers",
                 "Cloud experience",
                 "design patterns",
-                "Exposure to large-scale or big data applications"
+                "large-scale or big data applications"
             ],
             "missing_skills": [
                 "Agile/Scrum processes",
                 "web sockets"
             ],
-            "explanation": "Candidate demonstrates strong backend development experience with Node.js, NestJS, ORM, Puppeteer for web scraping, and large-scale data processing, aligning well with the job requirements, with minor gaps in explicit mention of Agile/Scrum and WebSockets."
+            "explanation": "Candidate demonstrates strong proficiency in Node.js, NestJS, ORM, Puppeteer for web scraping, REST APIs, message brokers, and cloud platforms, with extensive experience in large-scale backend systems, though Agile/Scrum and web sockets are not explicitly mentioned."
         }
     },
     {
         "candidate_file": "Jayesh Agrawat-Javascript Webscraping.docx",
-        "Overall_score": 93.0,
+        "Overall_score": 90.0,
         "details": {
-            "skills_match": 85.0,
-            "experience_match": 100.0,
+            "skills_match": 79.0,
+            "experience_match": 95.0,
             "project_relevance": 95.0,
-            "overall_match": 93.0,
+            "overall_match": 90.0,
             "matching_skills": [
                 "JavaScript (Node.js)",
                 "NestJS",
                 "ORM",
                 "Puppeteer",
-                "PostgreSQL and database optimization",
+                "PostgreSQL",
+                "database optimization",
                 "REST APIs",
-                "Microservices",
-                "Message brokers",
-                "Cloud experience (Azure preferred) but any other proven cloud experience req.",
-                "Strong understanding of design patterns",
-                "Exposure to large-scale or big data applications is a plus"
+                "microservices",
+                "message brokers",
+                "Cloud experience (Azure preferred)",
+                "Exposure to large-scale or big data applications"
             ],
             "missing_skills": [
                 "Agile/Scrum processes",
-                "Web sockets"
+                "Strong understanding of design patterns",
+                "web sockets"
             ],
-            "explanation": "Jayesh Agrawat is a strong candidate with over 7 years of relevant experience, demonstrating proficiency in Node.js, NestJS, ORM, Puppeteer for web scraping, PostgreSQL, REST APIs, microservices, message brokers, and cloud platforms, with a proven track record in large-scale data applications, though explicit mention of Agile/Scrum and Web Sockets is missing."
+            "explanation": "Jayesh Agrawat is a strong candidate with 7+ years of experience, proficient in Node.js, NestJS, ORM, Puppeteer for web scraping, and large-scale data processing, aligning well with the job requirements, though lacking explicit mention of Agile/Scrum, design patterns, and web sockets."
         }
     },
     {
@@ -87,31 +88,31 @@
     },
     {
         "candidate_file": "Resume1.txt",
-        "Overall_score": 13.0,
+        "Overall_score": 10.0,
         "details": {
-            "skills_match": 14.0,
+            "skills_match": 15.0,
             "experience_match": 20.0,
             "project_relevance": 5.0,
-            "overall_match": 13.0,
+            "overall_match": 10.0,
             "matching_skills": [
-                "Familiarity with Agile/Scrum processes",
+                "Agile/Scrum processes",
                 "Cloud experience (Azure preferred)"
             ],
             "missing_skills": [
-                "Strong hands-on experience with JavaScript (Node.js)",
-                "Proficiency in NestJS",
-                "Proficiency in ORM",
-                "Proficiency in Puppeteer",
-                "Good knowledge of PostgreSQL",
+                "JavaScript (Node.js)",
+                "NestJS",
+                "ORM",
+                "Puppeteer",
+                "PostgreSQL",
                 "Database optimization",
-                "Experience with REST APIs",
+                "REST APIs",
                 "Microservices",
                 "Message brokers",
-                "Strong understanding of design patterns",
+                "Design patterns",
                 "Web sockets",
-                "Exposure to large-scale or big data applications is a plus"
+                "Exposure to large-scale or big data applications"
             ],
-            "explanation": "The candidate possesses strong Azure cloud and DevOps experience with 7.9+ years in IT, meeting the experience duration and cloud requirement, but critically lacks core JavaScript backend development skills, NestJS, ORM, Puppeteer for web scraping, PostgreSQL, microservices, design patterns, and web sockets, making them a poor fit for this specialized role."
+            "explanation": "The candidate has relevant years of IT experience and strong Azure cloud skills, but critically lacks core requirements such as JavaScript (Node.js), NestJS, ORM, Puppeteer, PostgreSQL, microservices, and web sockets, making the profile a poor match for a JavaScript Backend Developer (Web Scraping) role."
         }
     },
     {
@@ -136,11 +137,11 @@
                 "REST APIs",
                 "microservices",
                 "message brokers",
-                "Familiarity with Agile/Scrum processes",
-                "Strong understanding of design patterns",
+                "Agile/Scrum processes",
+                "design patterns",
                 "web sockets"
             ],
-            "explanation": "The candidate is a strong Azure DevOps/Infrastructure engineer with 6+ years of experience, but lacks the core JavaScript backend development, NestJS, ORM, Puppeteer, and database optimization skills required for this role."
+            "explanation": "The candidate has extensive Azure DevOps and infrastructure experience but lacks the core JavaScript backend development skills (Node.js, NestJS, ORM, Puppeteer) required for this role."
         }
     }
 ]
