@@ -1,0 +1,26 @@
+{
+  "1888502a-07b6-4e64-8aa4-c9ad6c4374a1__3b4502fe-bdc4-452a-8c28-b2545854a552": {
+    "skills_match": 85.0,
+    "experience_match": 100.0,
+    "project_relevance": 95.0,
+    "overall_match": 93.0,
+    "matching_skills": [
+      "JavaScript (Node.js)",
+      "NestJS",
+      "ORM",
+      "PostgreSQL",
+      "REST APIs",
+      "Microservices",
+      "Message brokers",
+      "Agile/Scrum processes",
+      "Cloud experience (Azure)",
+      "Design patterns",
+      "Web sockets",
+      "Large-scale or big data applications"
+    ],
+    "missing_skills": [
+      "Puppeteer"
+    ],
+    "explanation": "Candidate has strong experience in Node.js, NestJS, PostgreSQL, microservices, and large-scale applications, with relevant web scraping project experience, but lacks explicit mention of Puppeteer."
+  }
+}
