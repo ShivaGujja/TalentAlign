@@ -116,7 +116,7 @@ def parse_json_from_model_text(text: str) -> dict:
 
 
 def prompt_for_job_candidate(job_text: str, candidate_text: str) -> str:
-    # You can refine this prompt; keep strict JSON response format
+    
     return f"""
 You are an AI that evaluates a candidate profile against job requirements.
 Return results STRICTLY in JSON exactly in this format (no extra text):
@@ -153,9 +153,7 @@ def call_gemini_json(job_text: str, candidate_text: str) -> MatchResult:
     text = getattr(response, "text", None) or str(response)
     parsed = parse_json_from_model_text(text)
 
-    # Validate / cast
-    # Ensure types are correct and lists exist
-    # Might raise error if structure is wrong
+    
     parsed["matching_skills"] = parsed.get("matching_skills", [])
     parsed["missing_skills"] = parsed.get("missing_skills", [])
     return MatchResult(**parsed)
@@ -209,21 +207,21 @@ def analyze(req: AnalyzeRequest):
 
     for cid in target_candidates:
         if cid not in candidates:
-            # skip or raise — here we skip but you can change behavior
+            
             continue
         candidate_text = candidates[cid]["text"]
         cache_key = make_cache_key(job_text, candidate_text)
 
-        # cached?
+        
         if (job_id, cid) in results_store:
             result = results_store[(job_id, cid)]
         else:
-            # call the LLM and cache
+            
             try:
                 match: MatchResult = call_gemini_json(job_text, candidate_text)
                 result = match.model_dump()
             except Exception as e:
-                # If LLM fails, return an error-structured result
+                
                 result = {
                     "skills_match": 0.0,
                     "experience_match": 0.0,
@@ -242,14 +240,14 @@ def analyze(req: AnalyzeRequest):
             "result": result
         })
 
-    # Optionally persist results_store to disk (simple snapshot)
+    
     try:
         with open(RESULTS_FILE, "w", encoding="utf-8") as f:
             json.dump({f"{k[0]}__{k[1]}": v for k, v in results_store.items()}, f, indent=2)
     except Exception:
         pass
 
-    # Convert result items to Pydantic models before returning
+    
     response_items = []
     for it in result_items:
         response_items.append(
