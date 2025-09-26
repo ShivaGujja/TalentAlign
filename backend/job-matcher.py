@@ -6,14 +6,14 @@ from dotenv import load_dotenv
 import docx
 import pypdf
 
-# Load environment variables
+
 load_dotenv()
 
-# 1. Configure Gemini
+
 genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 model = genai.GenerativeModel("gemini-2.5-flash")
 
-# 2. Define Schema
+
 class MatchResult(BaseModel):
     skills_match: float
     experience_match: float
@@ -26,7 +26,7 @@ class MatchResult(BaseModel):
 resume_directory = "C:/Internship_prep/Job-Matcher-AI/backend/resumes"
 
 
-# --- Resume Analyzer ---
+
 def Analyze_resume(candidate, Job, file_name):
     print(f"Analyzing: {file_name}")
 
@@ -53,12 +53,12 @@ def Analyze_resume(candidate, Job, file_name):
         generation_config={"response_mime_type": "application/json", "temperature": 0}
     )
 
-    # Parse JSON into Pydantic object
+    
     result_pre = MatchResult.model_validate_json(response.text)
     return result_pre
 
 
-# --- Read DOCX files ---
+
 def read_docx(doc):
     document = docx.Document(doc)
     full_text = []
@@ -67,7 +67,7 @@ def read_docx(doc):
     return '\n'.join(full_text)
 
 
-# --- Read PDF files ---
+
 def read_pdf(pdf):
     pdf_doc = pypdf.PdfReader(pdf)
     text = ""
@@ -76,15 +76,15 @@ def read_pdf(pdf):
     return text
 
 
-# --- Main function ---
+
 def main():
     all_results = []
 
-    # Load job description
+    
     with open("Job_discription.txt", encoding="utf-8") as JD:
         Job = JD.read()
 
-    # Process all resumes
+    
     for resume in os.scandir(resume_directory):
         if resume.name.endswith('.txt'):
             with open(resume.path, encoding="utf-8") as res:
@@ -103,17 +103,17 @@ def main():
             print(f"Skipping unsupported file: {resume.name}")
             continue
 
-        # Store results
+        
         all_results.append({
             "candidate_file": resume.name,
             "Overall_score": result.overall_match,
             "details": result.model_dump()
         })
 
-    # Sort by score (highest first)
+    
     all_results.sort(key=lambda x: x["Overall_score"], reverse=True)
 
-    # Save to JSON
+    
     output_file_name = "final_output.json"
     with open(output_file_name, 'w', encoding='utf-8') as f:
         json.dump(all_results, f, indent=4)

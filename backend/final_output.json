@@ -1,5 +1,33 @@
 [
     {
+        "candidate_file": "Jayesh Agrawat-Javascript Webscraping.docx",
+        "Overall_score": 93.0,
+        "details": {
+            "skills_match": 85.0,
+            "experience_match": 100.0,
+            "project_relevance": 95.0,
+            "overall_match": 93.0,
+            "matching_skills": [
+                "JavaScript (Node.js)",
+                "NestJS",
+                "ORM",
+                "Puppeteer",
+                "PostgreSQL and database optimization",
+                "REST APIs",
+                "Microservices",
+                "Message brokers",
+                "Cloud experience (Azure preferred) but any other proven cloud experience req.",
+                "Strong understanding of design patterns",
+                "Exposure to large-scale or big data applications is a plus"
+            ],
+            "missing_skills": [
+                "Agile/Scrum processes",
+                "Web sockets"
+            ],
+            "explanation": "Jayesh Agrawat is a strong candidate with over 7 years of relevant experience, demonstrating proficiency in Node.js, NestJS, ORM, Puppeteer for web scraping, PostgreSQL, REST APIs, microservices, message brokers, and cloud platforms, with a proven track record in large-scale data applications, though explicit mention of Agile/Scrum and Web Sockets is missing."
+        }
+    },
+    {
         "candidate_file": "Resume2.txt",
         "Overall_score": 92.0,
         "details": {
@@ -26,35 +54,6 @@
                 "web sockets"
             ],
             "explanation": "Candidate demonstrates strong proficiency in Node.js, NestJS, ORM, Puppeteer for web scraping, REST APIs, message brokers, and cloud platforms, with extensive experience in large-scale backend systems, though Agile/Scrum and web sockets are not explicitly mentioned."
-        }
-    },
-    {
-        "candidate_file": "Jayesh Agrawat-Javascript Webscraping.docx",
-        "Overall_score": 90.0,
-        "details": {
-            "skills_match": 79.0,
-            "experience_match": 95.0,
-            "project_relevance": 95.0,
-            "overall_match": 90.0,
-            "matching_skills": [
-                "JavaScript (Node.js)",
-                "NestJS",
-                "ORM",
-                "Puppeteer",
-                "PostgreSQL",
-                "database optimization",
-                "REST APIs",
-                "microservices",
-                "message brokers",
-                "Cloud experience (Azure preferred)",
-                "Exposure to large-scale or big data applications"
-            ],
-            "missing_skills": [
-                "Agile/Scrum processes",
-                "Strong understanding of design patterns",
-                "web sockets"
-            ],
-            "explanation": "Jayesh Agrawat is a strong candidate with 7+ years of experience, proficient in Node.js, NestJS, ORM, Puppeteer for web scraping, and large-scale data processing, aligning well with the job requirements, though lacking explicit mention of Agile/Scrum, design patterns, and web sockets."
         }
     },
     {

@@ -97,7 +97,7 @@ def extract_text_from_file(path: Path) -> str:
         return read_pdf(path)
     if ext == ".docx":
         return read_docx(path)
-    # fallback / .txt
+    
     return read_txt(path)
 
 def parse_json_from_model_text(text: str) -> dict:
