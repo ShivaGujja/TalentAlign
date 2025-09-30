@@ -1,0 +1,72 @@
+PROFILE SUMMARY
+ Software engineer with a well-established history of involvement in product engineering teams.
+ Skilled in leadership, and skilled at fostering collaboration among globally distributed functional teams.
+EDUCATION
+Bachelor of Technology (B Tech) Rajasthan Technical University 2015
+Major in Computer Science Engineering
+INTERNSHIP
+ Software Engineer Intern Sun quest Information Systems 2015|Udaipur,India
+ May 2016–Aug 2016|Bengaluru
+ Worked on Development of Data Masking component, which masked Patient&#39;s Data suffering from Critical Disease.
+EXPERIENCE
+Senior Software Engineer Insticator
+May2024–Present|Remote,India
+Roles &amp; Responsibilities
+ Part of the Product Development Team, contributing to the development of SSP Exchange, played a key role in building the
+Real Time Bidding Application(SSP Exchange)from the ground up.
+ Designed and implemented a request sampling system to log every incoming bid request.
+ Developed and maintained scalable and efficient server-side applications using Nest JS, following best practices and design
+patterns.
+ Built REST ful APIs end points using Nest JS, ensuring secure and performant data exchange between client and server.
+ Integrated third-party APIs and collaborated with external partners to expand product capabilities and functionalities
+Integrated new bidder adapters from various Supply-Side Partners/DSPs.
+ Build Back end System using Nest Js for Operations Team utilizing Sequelize ORM Improved product capability to reach
+50k requests/sec
+ Integrated AI to enhance Ad scanning Capabilities
+ Implemented automation/data transformation scripts for analytics processing Resolved P0-level issues efficiently
+Technologies &amp; Tools: Node Js, Golang, Type Script, React Js, Postgres SQL, Athena, Kafka, Redis Cloud Platform: Amazon
+Web Services Development and Deployment: Circle Ci, Docker &amp; Kubernates Monitoring and Logging: Prometheus, Grafana,
+ELK Stack
+Senior Software Development Engineer News Corp India
+April 2019–May2024|Bengaluru/Remote
+Roles &amp; Responsibilities
+ Key member in Engineering Team, plays pivotal role in distributing data across News Corp Businesses.
+ Lead development and enhancement of key components with in the Node Js Tracker, encompassing user identification, data
+ingestion into CDP, and data governance.
+ Developed Scalable NestJs Application using Puppeteer to extract data from publisher&#39;s sites
+ Lead Development and integration of Web and Mobile Analytics Tracker across News Corp Businesses.
+ Ensured unwavering stability and reliability of real-time data flow into the Data Pipeline, resulting in an impressive 70%
+increase in data context coverage for News Corp BU&#39;s.
+ DevelopedanddesignedCNAMEcloakingservice,forcrossdomainuseridentification.
+ Engaged in Development of robust REST ful APIs for the Data Platform using Python Fast API and Go lang Gin.
+Technologies &amp; Tools: Node Js, Python, Golang, AWS Lambda, Cloud Function, Big Query, Puppeteer, Pub/Sub, GIT, Express
+JS, Server less
+Platform: Google Cloud Platform, Amazon Web Services
+Software Engineer Travel Spends
+September 2018–March 2019|Bengaluru
+Roles &amp; Responsibilities
+ Worked on orchestrating the seamless backend transition from PHP to Node.js, ensuring enhanced performance and
+scalability.
+
+ Played a important role in building interactive Dashboards and visually appealing Charts that increased product UX
+ Successfully implemented task scheduling using Airflow, optimising data extraction processes for increased efficiency.
+Technologies: Node Js, Python ,Post gres SQL, Lambda Function, Server less, Airflow
+Platform: Amazon Web Services
+Software Engineer Gida Technologies
+Worked on development of a Enterprise Application for a major client in Telecomm Services
+June 2018–August 2018|Bengaluru
+Roles &amp; Responsibilities:
+Managed the development of an front-end module, improving the user interface, and using Vanilla JavaScript to ensure smooth
+performance.
+Technologies : Node Js, React Js, Vanilla Js, GIT, Post gres SQL
+Software Engineer D square Solutions
+November2016–June2018|Bengaluru
+ Instrumental in development and crafting an Data Analytics BI Tool, integrated ETL/ELT capabilities with robust reporting
+functionalities
+ Key contributor to the design and development of data visualizations and charts that improve the product&#39;s performance and
+impact
+ Coordinated the seamless and efficient transfer of data from a variety of data bases, guaranteeing seamless integration and
+access to essential information
+ Developed Loyalty Platform focusing on loyalty solutions and insights of customer&#39;s engagement
+Technologies &amp; Tools:NodeJs,Java,ReactJs,MySQL,D3Js,Play Frame work(Java)
+Platform: SVN(Apache Sub version),

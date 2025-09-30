@@ -1,0 +1,71 @@
+Profile Summary
+Overall 7.9+years of IT Experience across in Cloud Strategy, Cloud Solutions, Microsoft Azure, Azure Migrate, Azure Site
+Recovery &amp; Azure Dev Ops with IAAS, PAAS and Manual Testing.
+Technical Skills
+ Cloud Platform: Microsoft Azure
+ Cloud Migration: Azure Migrate, ASR Azure Site Recovery, Cloudscape, Movere
+ Cloud Solution: Cloud Discovery, Strategy planning, Workshops, Questionnaires
+ Automation &amp; DevOps: GitLab, Ansible, Jenkins, Terraform, Azure Repos, VSTS(Azure DevOps)
+ Scripting: Power Shell
+ DataAnalytics&amp;Reporting: PowerBI, MicrosoftExcel, Powerpoint
+Education:
+ Bachelor’s Degree in Computer Science, Osmania University, Hyderabad – 2017
+Professional Experience:
+Company Name: Matilda Cloud Private Limited (Hyderabad)
+Role: Cloud Engineer
+Duration: February 2025- June2025
+Responsibilities:
+ Executed lift-and-shift migration of on-prem virtual servers using the Azure Migrate feature for seamless cutover.
+ Migrated a low-use compliance server (Windows 2008 R2 STD) to Azure with Azure Migrate, ensuring audit access and
+reducing on-prem maintenance.
+ Created reusable Terraform plugins to simplify Infrastructure as Code (IaC) and enable fast, customizable cloud
+deployments using flexible inputs.
+
+Company Name: Capgemini Technology Services India Limited (Hyderabad)
+Role: Cloud Consultant
+Duration: March 2022 -February 2025
+Responsibilities:
+ Experienced in VM migration, including Application Intake, Assessment, and Planning, helping clients choose the right
+servers and apps for 6R migration across platforms like Azure, AWS, GCP, and others to ensure a smooth and efficient cloud
+transition.
+ Directed workshops and collaborated with Enterprise Architects and Application Owners.
+ Extensive experience in defining Migration Strategy with 6Rs (Rehost, Re-Platform, Refactor, Rearchitect, Retain, Retire).
+ Used Cloudscape and Movere to conduct in-depth analysis of server-level information for cloud evaluations.
+ Created roadmaps and business cases, Cloud guiding principles, Migration Complexity assessments, identified TCO models,
+As-Is &amp; To-Be architectures, and sustainability objectives.
+ Skilled in using Power BI, Microsoft Excel, and PowerPoint for in-depth data analysis, insightful visualizations, and
+comprehensive reporting.
+Company Name: VHS Consulting India Pvt. Ltd (Hyderabad)
+Role: DevOps Engineer
+Duration: August 2021 - March 2022
+Responsibilities:
+ Implemented CI/CD automation using GitLab, managing pipelines with YAML and Ansible scripts to ensure smooth
+deployment processes.
+ Experienced in source revisioning, conducting code reviews, and promoting collaborative development within GitLab;
+utilized Postman for API testing and code modifications.
+ Good knowledge in handling Ubuntu and MongoDB.
+ Created virtual machine setups in the client’s cloud environment to meet specific business requirements and specifications.
+ Acted as a Single Point of Contact (SPOC) for monitoring service performance using Zabbix, ensuring optimal system health
+
+and reliability.
+Company Name: Cognizant Technology and Solutions India Pvt. Ltd (Hyderabad)
+Role: Azure Administrator
+Duration: September2017-August2021
+Responsibilities:
+ Experienced in creating and managing Azure resources using the Azure Portal and PowerShell scripts.
+ Proficient in Azure Networking and Storage Accounts, with hands-on experience in VM provisioning, NSG, Application
+Gateway, Application Insights, Azure Policies, VNet, Subnet, AZCopy, Azure Roles, File Storage, and ARM templates.
+ Configured PaaS services like App Service, Web Apps, and App Service Plan.
+ Configured and administered Azure Active Directory for secure user management and access control.
+ Created and maintained Build and Release pipelines for .NET applications in a TFVC repository using Azure DevOps.
+ Proficient in setting up and managing CI/CD pipelines using Jenkins, optimizing the software development lifecycle.
+
+Certificates
+ AZ-104 – Microsoft Azure Administrator
+ Global – Agile Fundamentals (Internal Certificate)
+
+Accomplishments
+ Received client appreciation for independently managing a project—excelled in data management, issue resolution,
+information transfer, and mastering visualization tools with great attention to detail.
+ Identified critical P0 bugs in the conversation engine tool and brought them to the client’s attention, leading to prompt
+fixes by the development team and resulting in client recognition.
