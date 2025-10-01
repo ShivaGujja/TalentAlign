@@ -2,6 +2,6 @@ fastapi
 uvicorn
 python-dotenv
 pydantic
-docx
+python-docx
 pypdf
 google-generativeai
