@@ -1,0 +1,38 @@
+Job Title: Technical Solutions Architect – AI & Cloud
+Location: Hyderabad, India
+
+Key Responsibilities
+Define and create technical roadmaps aligned with business objectives.
+
+Architect cloud-native, microservices-based solutions with a focus on scalability, resilience, and performance.
+
+Design and implement DevSecOps architectures to ensure secure and automated delivery pipelines.
+
+Lead the design and adoption of MLOps frameworks for AI/ML deployment and lifecycle management.
+
+Architect LLM/AI-based solutions, integrating emerging AI technologies into enterprise systems.
+
+Guide data engineering architectures, including data pipelines, lakes, and real-time processing.
+
+Partner with business stakeholders, product owners, and engineering teams to align solutions with client requirements.
+
+Provide leadership in technology selection, PoCs, and best practice adoption.
+
+Mentor technical teams and ensure adherence to architectural standards.
+
+Required Skills & Qualifications
+Bachelor’s/Master’s degree in Computer Science, Engineering, or related field.
+
+10+ years of experience in software engineering, with 3+ years in a solutions/technical architect role.
+
+Proven expertise in cloud platforms (AWS, Azure, or GCP).
+
+Strong understanding of microservices, APIs, event-driven architectures, and security best practices.
+
+Hands-on experience with DevOps/DevSecOps tools (Docker, Kubernetes, Jenkins, CI/CD).
+
+Knowledge of MLOps, AI/LLM integration, and Data Engineering frameworks.
+
+Strong proficiency with databases (relational and NoSQL).
+
+Excellent communication, presentation, and stakeholder management skills.
