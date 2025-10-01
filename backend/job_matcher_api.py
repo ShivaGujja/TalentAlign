@@ -26,7 +26,7 @@ model = genai.GenerativeModel("gemini-2.5-flash")
 app = FastAPI(title="Job Matcher API",version="1.0")
 app.add_middleware(
     CORSMiddleware,
-        allow_origins=["http://localhost:5173", "http://127.0.0.1:5173"],
+        allow_origins=["http://localhost:5173", "http://127.0.0.1:5173","https://job-matcher-ai.onrender.com"],
         allow_methods=["*"],
         allow_headers=["*"],
     )
