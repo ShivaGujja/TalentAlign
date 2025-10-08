@@ -15,13 +15,13 @@ export default function App() {
       try {
         const res = await fetch(`${API_URL}/`);
         if (res.ok) {
-          console.log("✅ Backend awake and ready!");
+          console.log(" Backend awake and ready!");
           setBackendReady(true);
         } else {
-          console.warn("⚠️ Backend ping failed:", res.status);
+          console.warn(" Backend ping failed:", res.status);
         }
       } catch (error) {
-        console.error("❌ Backend not reachable:", error);
+        console.error(" Backend not reachable:", error);
       }
     };
     wakeBackend();
