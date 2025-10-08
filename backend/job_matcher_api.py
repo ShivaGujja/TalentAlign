@@ -275,3 +275,8 @@ def get_results(job_id: Optional[str] = None):
         out.append({"job_id": j, "candidate_id": c, "result": res})
     return {"count": len(out), "items": out}
 
+@app.get("/")
+def read_root():
+    return {"message": "Backend is running!"}
+
+
