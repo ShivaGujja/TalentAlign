@@ -1,12 +1,12 @@
 [
     {
         "candidate_file": "Resume2.txt",
-        "Overall_score": 94.0,
+        "Overall_score": 92.0,
         "details": {
-            "skills_match": 85.0,
-            "experience_match": 100.0,
-            "project_relevance": 100.0,
-            "overall_match": 94.0,
+            "skills_match": 86.0,
+            "experience_match": 95.0,
+            "project_relevance": 98.0,
+            "overall_match": 92.0,
             "matching_skills": [
                 "JavaScript (Node.js)",
                 "NestJS",
@@ -19,13 +19,42 @@
                 "message brokers",
                 "Cloud experience",
                 "design patterns",
-                "Exposure to large-scale or big data applications"
+                "large-scale or big data applications"
             ],
             "missing_skills": [
                 "Agile/Scrum processes",
                 "web sockets"
             ],
-            "explanation": "Candidate demonstrates strong backend development experience with Node.js, NestJS, ORM, Puppeteer for web scraping, and large-scale data processing, aligning well with the job requirements, with minor gaps in explicit mention of Agile/Scrum and WebSockets."
+            "explanation": "Candidate demonstrates strong proficiency in Node.js, NestJS, ORM, Puppeteer for web scraping, REST APIs, message brokers, and cloud platforms, with extensive experience in large-scale backend systems, though Agile/Scrum and web sockets are not explicitly mentioned."
+        }
+    },
+    {
+        "candidate_file": "Girish Luna Resume (1).pdf",
+        "Overall_score": 90.0,
+        "details": {
+            "skills_match": 79.0,
+            "experience_match": 95.0,
+            "project_relevance": 95.0,
+            "overall_match": 90.0,
+            "matching_skills": [
+                "JavaScript (Node.js)",
+                "NestJS",
+                "PostgreSQL",
+                "Database optimization",
+                "REST APIs",
+                "Microservices",
+                "Message brokers",
+                "Agile/Scrum processes",
+                "Cloud experience (Azure preferred)",
+                "Web sockets",
+                "Large-scale or big data applications (exposure)"
+            ],
+            "missing_skills": [
+                "ORM",
+                "Puppeteer",
+                "Design patterns"
+            ],
+            "explanation": "The candidate is a strong match with 7+ years of experience, excellent alignment with Node.js, NestJS, PostgreSQL, microservices, and real-time data processing, and a highly relevant web scraping project (MCUBE), despite not explicitly listing ORM, Puppeteer, or Design Patterns as skills."
         }
     },
     {
@@ -58,61 +87,32 @@
         }
     },
     {
-        "candidate_file": "Girish Luna Resume (1).pdf",
-        "Overall_score": 88.0,
-        "details": {
-            "skills_match": 79.0,
-            "experience_match": 90.0,
-            "project_relevance": 95.0,
-            "overall_match": 88.0,
-            "matching_skills": [
-                "JavaScript (Node.js)",
-                "NestJS",
-                "PostgreSQL",
-                "database optimization",
-                "REST APIs",
-                "microservices",
-                "message brokers",
-                "Agile/Scrum",
-                "Cloud experience (Azure preferred)",
-                "web sockets",
-                "large-scale or big data applications"
-            ],
-            "missing_skills": [
-                "ORM",
-                "Puppeteer",
-                "Strong understanding of design patterns"
-            ],
-            "explanation": "Candidate has 7+ years of experience matching the job's backend, NestJS, PostgreSQL, microservices, and real-time data requirements, with direct web scraping project experience, though specific tools like Puppeteer and explicit ORM/design patterns are not listed."
-        }
-    },
-    {
         "candidate_file": "Resume1.txt",
-        "Overall_score": 10.0,
+        "Overall_score": 13.0,
         "details": {
-            "skills_match": 15.0,
+            "skills_match": 14.0,
             "experience_match": 20.0,
             "project_relevance": 5.0,
-            "overall_match": 10.0,
+            "overall_match": 13.0,
             "matching_skills": [
-                "Agile/Scrum processes",
+                "Familiarity with Agile/Scrum processes",
                 "Cloud experience (Azure preferred)"
             ],
             "missing_skills": [
-                "JavaScript (Node.js)",
-                "NestJS",
-                "ORM",
-                "Puppeteer",
-                "PostgreSQL",
+                "Strong hands-on experience with JavaScript (Node.js)",
+                "Proficiency in NestJS",
+                "Proficiency in ORM",
+                "Proficiency in Puppeteer",
+                "Good knowledge of PostgreSQL",
                 "Database optimization",
-                "REST APIs",
+                "Experience with REST APIs",
                 "Microservices",
                 "Message brokers",
-                "Design patterns",
+                "Strong understanding of design patterns",
                 "Web sockets",
-                "Exposure to large-scale or big data applications"
+                "Exposure to large-scale or big data applications is a plus"
             ],
-            "explanation": "The candidate has relevant years of IT experience and strong Azure cloud skills, but critically lacks core requirements such as JavaScript (Node.js), NestJS, ORM, Puppeteer, PostgreSQL, microservices, and web sockets, making the profile a poor match for a JavaScript Backend Developer (Web Scraping) role."
+            "explanation": "The candidate possesses strong Azure cloud and DevOps experience with 7.9+ years in IT, meeting the experience duration and cloud requirement, but critically lacks core JavaScript backend development skills, NestJS, ORM, Puppeteer for web scraping, PostgreSQL, microservices, design patterns, and web sockets, making them a poor fit for this specialized role."
         }
     },
     {
