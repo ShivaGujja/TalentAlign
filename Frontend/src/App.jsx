@@ -32,6 +32,7 @@ export default function App() {
       <h1 className="text-2xl font-bold text-center text-indigo-700">
         Job Matcher AI
       </h1>
+      <p>it might take some time to start the backend sever(3-4 minutes)</p>
 
       <JobUpload setJobId={setJobId} />
 
